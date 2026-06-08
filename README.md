@@ -1,17 +1,48 @@
-# loginpage
+# Vibely Login UI
 
-A new Flutter project.
+Vibely Login UI est une interface de connexion moderne développée avec Flutter. Son design associe des tons bleus lumineux à un fond sombre afin de créer une expérience visuelle élégante et contemporaine.
 
-## Getting Started
+## Aperçu
 
-This project is a starting point for a Flutter application.
+Cette interface comprend :
 
-A few resources to get you started if this is your first Flutter project:
+* Un design moderne aux couleurs bleu et noir
+* Des champs de saisie élégants
+* Une carte de connexion épurée
+* Une connexion via Google et Apple
+* Une interface responsive et facilement personnalisable
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Technologies utilisées
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# Vibely-LoginPage
+* Flutter
+* Dart
+
+## Installation
+
+Clonez le projet :
+
+```bash
+git clone https://github.com/Mourtada-002/Vibely-LoginUI.git
+```
+
+Accédez au dossier du projet :
+
+```bash
+cd Vibely-LoginUI
+```
+
+Installez les dépendances :
+
+```bash
+flutter pub get
+```
+
+Lancez l'application :
+
+```bash
+flutter run
+```
+
+## Licence
+
+Ce projet est distribué à des fins d'apprentissage et de démonstration.
