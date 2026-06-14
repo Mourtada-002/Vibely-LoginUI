@@ -16,4 +16,4 @@ A **modern login screen built with Flutter**, combining bright blue tones with a
 
 ## Preview
 
-![Preview](assets/preview.png)
+![Preview](assets/preview1.png)
