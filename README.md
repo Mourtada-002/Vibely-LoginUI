@@ -13,3 +13,7 @@ A **modern login screen built with Flutter**, combining bright blue tones with a
 
 - **Flutter** – Cross-platform UI framework
 - **Dart** – Application logic and widget structure
+
+## Preview
+
+![Preview](assets/preview.png)
