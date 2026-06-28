@@ -24,14 +24,12 @@ class VibelyApp extends StatelessWidget {
   }
 }
 
-// Palette Vibely 
 const kBg = Color(0xFF080B14);
 const kOrb1 = Color(0xFF3D6BFF);
 const kOrb2 = Color(0xFF9B59FF);
 const kAccent = Color(0xFF4F7BFF);
 const kAccentLight = Color(0xFF8FAAFF);
 
-// Fond animé
 class BackgroundPainter extends CustomPainter {
   final double animValue;
   BackgroundPainter(this.animValue);
@@ -96,7 +94,6 @@ class BackgroundPainter extends CustomPainter {
   bool shouldRepaint(BackgroundPainter old) => old.animValue != animValue;
 }
 
-// Logo Vibely
 class VibelyLogo extends StatelessWidget {
   const VibelyLogo({super.key});
 
@@ -113,7 +110,6 @@ class VibelyLogo extends StatelessWidget {
   }
 }
 
-// Champ de saisie réutilisable
 class VibelyTextField extends StatelessWidget {
   final TextEditingController controller;
   final String label;
@@ -200,7 +196,6 @@ class VibelyTextField extends StatelessWidget {
   }
 }
 
-// Bouton principal
 class VibelyButton extends StatelessWidget {
   final String label;
   final bool isLoading;
@@ -265,7 +260,6 @@ class VibelyButton extends StatelessWidget {
   }
 }
 
-// Diviseur social
 class SocialDivider extends StatelessWidget {
   const SocialDivider({super.key});
 
@@ -290,7 +284,6 @@ class SocialDivider extends StatelessWidget {
   }
 }
 
-// Boutons sociaux 
 class SocialButtons extends StatelessWidget {
   const SocialButtons({super.key});
 
@@ -332,7 +325,6 @@ class SocialButtons extends StatelessWidget {
   }
 }
 
-// PAGE DE CONNEXION
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
 
@@ -431,7 +423,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                       const Center(child: VibelyLogo()),
                       const SizedBox(height: 24),
 
-                      // ── Titre ──
                       const Center(
                         child: Text(
                           'Se connecter',
@@ -456,7 +447,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                       ),
                       const SizedBox(height: 40),
 
-                      // Carte verre
                       ClipRRect(
                         borderRadius: BorderRadius.circular(24),
                         child: BackdropFilter(
@@ -540,7 +530,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
                       const SocialButtons(),
                       const SizedBox(height: 36),
 
-                      // ── Lien inscription ──
                       Center(
                         child: GestureDetector(
                           onTap: _goToRegister,
@@ -578,7 +567,6 @@ class _LoginPageState extends State<LoginPage> with TickerProviderStateMixin {
   }
 }
 
-// PAGE D'INSCRIPTION
 class RegisterPage extends StatefulWidget {
   const RegisterPage({super.key});
 
@@ -640,7 +628,6 @@ class _RegisterPageState extends State<RegisterPage>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kBg,
-      // Pas de défilement : on utilise le plein écran avec SafeArea
       body: Stack(
         children: [
           Positioned.fill(
@@ -662,11 +649,9 @@ class _RegisterPageState extends State<RegisterPage>
                     crossAxisAlignment: CrossAxisAlignment.center,
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      // Logo
                       const VibelyLogo(),
                       const SizedBox(height: 20),
 
-                      // Titre
                       const Text(
                         'Créer un compte',
                         textAlign: TextAlign.center,
@@ -689,7 +674,6 @@ class _RegisterPageState extends State<RegisterPage>
                       ),
                       const SizedBox(height: 28),
 
-                      // Carte verre
                       ClipRRect(
                         borderRadius: BorderRadius.circular(24),
                         child: BackdropFilter(
@@ -765,7 +749,6 @@ class _RegisterPageState extends State<RegisterPage>
                       const SocialButtons(),
                       const SizedBox(height: 28),
 
-                      // Lien connexion
                       GestureDetector(
                         onTap: () => Navigator.pop(context),
                         child: RichText(
